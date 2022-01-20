@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <section class="conteiner">
+<h1 class="register"><span>Register</span></h1>
+<p >
+  Create your account. It's free and only takes a minute
+</p>
+<form class="form1">
+  <div class="name-wrapper">
+    <input class="name input-border"
+      type="text"
+      placeholder="First name"
+      name="First Name"
+      required
+    />
+    <input class="name input-border"
+      type="text"
+      placeholder="Last Name"
+      name="Last Name"
+      required
+    />
+  </div>
+  <input class="inputsettings input-border"
+    type="email"
+    pattern="^[A-Za-z0-9_-]{3,32}@[a-z]{2,10}\.[a-z]{1,5}$"
+    name="email"
+    placeholder="Email"
+    required
+  />
+<input class="inputsettings input-border"
+  type="password"
+  name="password"
+  pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{3,16}$"
+  placeholder="Password"
+  required
+/>
+  <input class="inputsettings input-border"
+    type="password"
+    name="password"
+    pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{3,16}$"
+    placeholder="Confim Password"
+    required  
+  />
+  <div class="checkbox-wrapper">
+    <label>
+      <input  type="checkbox" name="accept" />I accept the <a class="checkbox-text-color" href="#">Terns of Use</a> & <a class="checkbox-text-color" href="#">Privacy Policy</a>.
+    </label>
+  </div>
+  <button class="inputsettings btn input-border">
+    Register Now
+  </button>
+</form>
+  </section>
+</body>
+</html>
